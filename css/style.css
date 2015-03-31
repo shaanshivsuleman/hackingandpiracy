@@ -890,10 +890,10 @@ html {
 }
 body {
   font-family: "Courier New", Courier, monospace;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.42857143;
-  color: #333;
-  background-color: #fff;
+  color: rgba(0, 255, 48, 0.49);
+  background-color: #000;
 }
 input,
 button,
