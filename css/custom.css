@@ -1,0 +1,11 @@
+/*Fold framework*/
+
+@charset "UTF-8";
+
+/*Text-selection/highlight color*/
+::selection {
+	background: #ddd; /* Safari */
+	}
+::-moz-selection {
+	background: #ddd; /* Firefox */
+}

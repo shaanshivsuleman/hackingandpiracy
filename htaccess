@@ -1,0 +1,25 @@
+#Shaan Shiv Suleman .htaccess file
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+RewriteEngine on  
+RewriteCond %{REQUEST_FILENAME} !-d  
+RewriteCond %{REQUEST_FILENAME}\.html -f  
+RewriteRule ^(.*)$ $1.html
+
+DirectoryIndex index       
+order deny,allow
+
+<Files ~ “^.*\.([Hh][Tt][Aa])”>
+order allow,deny
+deny from all
+satisfy all
+</Files>
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^shaanshivsuleman\.com [NC]
+RewriteRule (.*) http://www.shaanshivsuleman.com/$1 [L,R=301]
+
+ErrorDocument 404 /404.html
